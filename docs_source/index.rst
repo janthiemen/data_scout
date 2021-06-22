@@ -1,10 +1,8 @@
-.. Data Scout documentation master file, created by
-   sphinx-quickstart on Thu Jun 17 11:37:59 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Data Scout documentation master file
 
 Data Scout
 ======================================
+Welcome to the Data Scout documentation. This tool consists of two parts, a Python package that provides to tools to build readable and scalable data pipelines and a server that provides a user interface, to build those pipelines in a visual way.
 
 .. toctree::
    :maxdepth: 1

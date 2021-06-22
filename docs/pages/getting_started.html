@@ -582,7 +582,10 @@
 <div class="section" id="executing-a-json-pipeline">
 <h3>Executing a JSON pipeline<a class="headerlink" href="#executing-a-json-pipeline" title="Permalink to this headline">¶</a></h3>
 <p>Pipeline definitions can be given as JSON files or directly as Python commands. To execute a JSON definition, your code would look somewhat as follows:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">scout</span> <span class="o">=</span> <span class="n">Scout</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">data_scout.executor</span> <span class="kn">import</span> <span class="n">PandasExecutor</span><span class="p">,</span> <span class="n">CodeExecutor</span>
+<span class="kn">from</span> <span class="nn">data_scout.scout</span> <span class="kn">import</span> <span class="n">Scout</span>
+
+<span class="n">scout</span> <span class="o">=</span> <span class="n">Scout</span><span class="p">()</span>
 <span class="n">executor</span> <span class="o">=</span> <span class="n">PandasExecutor</span><span class="p">({</span><span class="s2">&quot;source&quot;</span><span class="p">:</span> <span class="s2">&quot;CSV&quot;</span><span class="p">,</span> <span class="s2">&quot;kwargs&quot;</span><span class="p">:</span> <span class="p">{</span>
     <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;test.csv&quot;</span><span class="p">,</span>
     <span class="s2">&quot;delimiter&quot;</span><span class="p">:</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span>

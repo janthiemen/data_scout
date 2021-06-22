@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name='data-scout',
-    version='0.1',
+    version='0.1.1',
     description='This package provides the tools to quickly setup a scalable and readable data pipeline that can be run on different platforms.',
     long_description=long_description,
     long_description_content_type="text/markdown",
