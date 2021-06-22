@@ -2,7 +2,7 @@
 
 Data Scout
 ======================================
-Welcome to the Data Scout documentation. This tool consists of two parts, a Python package that provides to tools to build readable and scalable data pipelines and a server that provides a user interface, to build those pipelines in a visual way.
+Welcome to the Data Scout documentation. This tool consists of two parts, a `Python package <https://github.com/janthiemen/data_scout>`__ that provides to tools to setup readable and scalable data pipelines and `a server <https://github.com/janthiemen/data_scout_server>`__ that provides a user interface, to build those pipelines in a visual way.
 
 .. image:: assets/wrangler_transformation.png
   :alt: The wrangler
