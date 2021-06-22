@@ -1,4 +1,6 @@
+LICENSE
 README.md
+pyproject.toml
 setup.py
 Data_Scout.egg-info/PKG-INFO
 Data_Scout.egg-info/SOURCES.txt
@@ -14,6 +16,9 @@ data_scout/connectors/big_query.py
 data_scout/connectors/connector.py
 data_scout/connectors/csv.py
 data_scout/connectors/data_source_type.py
+data_scout/connectors/excel.py
+data_scout/connectors/join.py
+data_scout/connectors/sql.py
 data_scout/transformations/__init__.py
 data_scout/transformations/_utils.py
 data_scout/transformations/array.py
@@ -38,3 +43,4 @@ data_scout/transformations/string.py
 data_scout/transformations/transformation.py
 data_scout/transformations/window.py
 test/test_pandas.py
+test/test_raw.py

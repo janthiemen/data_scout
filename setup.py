@@ -15,19 +15,23 @@ setup(
     url="https://github.com/janthiemen/data_scout/",
     project_urls={
         "Bug Tracker": "https://github.com/janthiemen/data_scout/issues",
-        "Documentation": 'https://github.com/janthiemen/data_scout/',
+        "Documentation": "https://janthiemen.github.io/data_scout/",
         "Source Code": "https://github.com/janthiemen/data_scout/",
     },
     keywords = ['data', 'data preperation'],
     package_data={},
     include_package_data=True,
-    install_requires=['pandas', 'xlrd'],
+    install_requires=['pandas', 'xlrd', 'openpyxl', 'sqlalchemy', 'pyparsing', 'text_unidecode', 'scikit-learn'],
     python_requires='>=3.6',
     extras_require={
         'dev': [
             'nose2',
         ]
     },
-    classifiers=[],
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
     test_suite='nose2.collector.collector',
 )

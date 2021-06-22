@@ -15,22 +15,23 @@ class TestPandas(unittest.TestCase):
         :return:
         """
         self.scout = Scout()
-        self.executor = CodeExecutor({"source": "CSV", "kwargs": {
-            "filename": "C:\\Users\\janthiemen.postema\\development\\data_scout\\data_scout\\uploads\\test.csv",
+        self.executor = PandasExecutor({"source": "CSV", "kwargs": {
+            "filename": "test/data/test.csv",
             "delimiter": ",",
             "encoding": "utf-8",
             "has_header": True
         }}, [{"transformation": "data-convert", "kwargs": {"field": "column1", "to": "int"}}], self.scout)
 
-    def test_one(self) -> None:
+    def test_to_int(self) -> None:
         """
-        Test whether one equals 1.
+        Test if column 1 is indeed of data type int
         :return:
         """
-        print(self.executor())
+        data, _ = self.executor()
+        self.assertIsInstance(data[0]["column1"], int)
 
 
 if __name__ == "__main__":
     test = TestPandas()
     test.setUp()
-    test.test_one()
+    test.test_to_int()

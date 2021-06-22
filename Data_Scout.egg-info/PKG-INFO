@@ -7,11 +7,17 @@ Author: Jan Thiemen Postema
 Author-email: info@scoutline.org
 License: UNKNOWN
 Project-URL: Bug Tracker, https://github.com/janthiemen/data_scout/issues
-Project-URL: Documentation, https://github.com/janthiemen/data_scout/
+Project-URL: Documentation, https://janthiemen.github.io/data_scout/
 Project-URL: Source Code, https://github.com/janthiemen/data_scout/
-Description: # Data Scout
 Keywords: data,data preperation
 Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 Provides-Extra: dev
+License-File: LICENSE
+
+# Data Scout
+
