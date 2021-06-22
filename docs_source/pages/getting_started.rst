@@ -17,6 +17,9 @@ Executing a JSON pipeline
 
 Pipeline definitions can be given as JSON files or directly as Python commands. To execute a JSON definition, your code would look somewhat as follows::
 
+    from data_scout.executor import PandasExecutor, CodeExecutor
+    from data_scout.scout import Scout
+
     scout = Scout()
     executor = PandasExecutor({"source": "CSV", "kwargs": {
         "filename": "test.csv",

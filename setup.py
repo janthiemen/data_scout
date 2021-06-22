@@ -4,9 +4,9 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name='Data Scout',
+    name='data-scout',
     version='0.1',
-    description='This package provides the processing and transformation steps for Data Scout pipelines.',
+    description='This package provides the tools to quickly setup a scalable and readable data pipeline that can be run on different platforms.',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Jan Thiemen Postema',
