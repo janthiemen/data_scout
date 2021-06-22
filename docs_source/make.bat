@@ -31,6 +31,7 @@ if errorlevel 9009 (
 rmdir /Q /S ..\docs
 move _build\html ..
 ren ..\html docs
+copy _gh-pages\*.* ..\docs
 
 goto end
 
